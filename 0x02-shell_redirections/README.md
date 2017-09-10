@@ -4,7 +4,7 @@ Shell I/O Redirection and Special Characters
 
 Redirecting the output of commands to files, devices, or the input of other commands.
 
-\> - redirect standard output to a file"
+\> - redirect standard output to a file"nl"
 \>> - append output to a file"
 \< - get standard input from a file instead of the keyboard"
 \| - send output from one program to the input of another program
