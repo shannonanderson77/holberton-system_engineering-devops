@@ -4,18 +4,18 @@ Shell I/O Redirection and Special Characters
 
 Redirecting the output of commands to files, devices, or the input of other commands.
 
-> - redirect standard output to a file
->> - append output to a file
-< - get standard input from a file instead of the keyboard
-| - send output from one program to the input of another program
-2>&1 - redirect the error output to the standard output
-# - start of a comment
-\ - escape special characters
-" " - whitespace, can be a tab, newline, vertical tab, form feed, carriage return or space
-~ - tilde, representation of home directory, ~/ means current users home directory otherwise takes username
-! - negate
-'' - protect text inside so that it has a literal meaning
-; - seperates multiple commands on the same line
+\> - redirect standard output to a file
+\>> - append output to a file
+\< - get standard input from a file instead of the keyboard
+\| - send output from one program to the input of another program
+\2>&1 - redirect the error output to the standard output
+\# - start of a comment
+\\ - escape special characters
+\" " - whitespace, can be a tab, newline, vertical tab, form feed, carriage return or space
+\~ - tilde, representation of home directory, \~/ means current users home directory otherwise takes username
+\! - negate
+\'' - protect text inside so that it has a literal meaning
+\; - seperates multiple commands on the same line
 
 Filters take standard input, performs an operation and then sends results to standard output. Frequently used with pipelines.
 
@@ -33,5 +33,5 @@ passwd - change user password
 
 When combining commands and filters with redirections, the redirection must appear after the other options and arguments in the command.
 
-/etc/passwd - user account information
-/etc/shadow - secure user account information
+\/etc\/passwd - user account information
+\/etc\/shadow - secure user account information
