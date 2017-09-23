@@ -1,3 +1,3 @@
-#Readme
+<h1>Readme</h1>
 
-###This project is about init files, variables and expansions. I'm running out of time for submission so I will return later and create a more detailed Readme.
+<p>This project is about init files, variables and expansions. I'm running out of time for submission so I will return later and create a more detailed Readme.</p>
