@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script is displaying the contents of the current directory
+for file in *
+do
+	find "$file" | cut -f 2 -d '-'
+done
