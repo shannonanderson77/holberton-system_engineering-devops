@@ -3,7 +3,7 @@
 LIMIT=10
 counter=0
 while [ "$counter" != "$LIMIT" ]; do
-	counter=$(( counter + 1))
+	counter=$(( counter + 1 ))
 	if [ $counter == 9 ]
 	then
 		echo 'Hi'
