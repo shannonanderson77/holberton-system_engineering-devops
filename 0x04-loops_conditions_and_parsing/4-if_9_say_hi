@@ -2,8 +2,7 @@
 # This script is displaying "Holberton School" 10 times and "Hi" the 9th
 LIMIT=10
 counter=0
-while  [[ "$counter" != "$LIMIT" ]]
-do
+while [ "$counter" != "$LIMIT" ]; do
 	counter=$(( counter + 1))
 	if [ $counter == 9 ]
 	then
