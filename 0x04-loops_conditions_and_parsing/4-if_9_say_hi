@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times and "Hi" the 9th
+counter=0
+while  [ $counter -le 9 ]
+do
+	counter=$(( counter + 1))
+	if [ $counter == 9 ]
+	then
+		echo 'Hi'
+	else
+		echo 'Holberton School'
+	fi
+done

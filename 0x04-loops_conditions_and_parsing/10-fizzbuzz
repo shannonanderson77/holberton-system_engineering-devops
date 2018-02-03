@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script is displaying "Fizz" if number is multiple of 3, "Buzz" if number
+# is a multiple of 5, "FizzBuzz" if number is a multiple of 15, and number
+# otherwise for 100 iterations
+counter=0
+while  [ $counter -le 99 ]
+do
+	counter=$(( counter + 1 ))
+	if [ $(( counter % 15 )) == 0 ]
+	then
+		echo 'FizzBuzz'
+	elif [ $(( counter % 5 )) == 0 ]
+	then
+		echo 'Buzz'
+	elif [ $(( counter % 3 )) == 0 ]
+	then
+		echo 'Fizz'
+	else
+		echo "$counter"
+	fi
+done

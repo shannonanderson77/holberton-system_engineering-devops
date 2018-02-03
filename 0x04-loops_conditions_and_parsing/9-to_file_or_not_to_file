@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script is displaying information about the holbetonschool file
+if [ $(( counter % 15 )) == 0 ]; then
+	echo 'FizzBuzz'
+elif [ $(( counter % 5 )) == 0 ]
+then
+	echo 'Buzz'
+elif [ $(( counter % 3 )) == 0 ]
+then
+	echo 'Fizz'
+else
+	echo "$counter"
+fi
