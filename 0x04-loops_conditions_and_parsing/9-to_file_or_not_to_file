@@ -1,13 +1,20 @@
 #!/usr/bin/env bash
-# This script is displaying information about the holbetonschool file
-if [ $(( counter % 15 )) == 0 ]; then
-	echo 'FizzBuzz'
-elif [ $(( counter % 5 )) == 0 ]
-then
-	echo 'Buzz'
-elif [ $(( counter % 3 )) == 0 ]
-then
-	echo 'Fizz'
+# This script is displaying information about the holbertonschool file
+file="holbertonschool"
+if [ ! -e "$file" ]; then
+	echo 'holbertonschool file does not exist'
+elif [ -f "$file" ] && [[ ! -s "$file" ]]; then
+	echo 'holbertonschool file exists'
+	echo 'holbertonschool file is empty'
+elif [ -f "$file" ] && [[ -s "$file" ]]; then
+	echo 'holbertonschool file exists'
+	echo 'holbertonschool file is not empty'
+elif [ -d "$file" ] && [[ -s "$file" ]]; then
+	echo 'holbertonschool file exists'
+	echo 'holbertonschool file is not empty'
+fi
+if [ -f "$file" ]; then
+	echo 'holbertonschool is a regular file'
 else
-	echo "$counter"
+	:
 fi
