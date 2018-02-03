@@ -8,7 +8,7 @@ do
 	hour=$(( hour + 1 ))
 	while  [ $minute -le 59 ]
 	do
-		minute=$(( minute + 1))
+		minute=$(( minute + 1 ))
 		if [ $minute == 60 ]
 		then
 			echo "Hour: $hour"
