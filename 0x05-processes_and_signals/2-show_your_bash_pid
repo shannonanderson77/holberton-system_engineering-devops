@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A Bash script that displays a line containing the bash word
+ps -af --pid $BASHPID
+# shellcheck disable=SC2009
