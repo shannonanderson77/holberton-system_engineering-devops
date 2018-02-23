@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # A script that configures a Ubuntu server
 cp /etc/hosts ~/hosts.new
-sed -i "/localhost/ s/.*/127.0.0.1\tlocalhost/g" ~/hosts.new
+sed -i "/localhost/ s/.*/127.0.0.2\tlocalhost/g" ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
 sudo -- sh -c "echo 8.8.8.8	facebook.com >> /etc/hosts"
