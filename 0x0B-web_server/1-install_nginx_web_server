@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A script that installs nginx on my web-01 server
+sudo apt-get update
+sudo apt-get -y install nginx
+echo "Holberton School" > /usr/share/nginx/html/index.html
