@@ -10,4 +10,4 @@ export IP=$2
 export USERNAME=$3
 export PATH_TO_SSH_KEY=$4
 
-scp "$1" "$3@$2":~/ "$4"
+scp -o StrictHostKeyChecking=no "$1" "$3@$2":~/ "$4"
