@@ -6,7 +6,7 @@ USERNAME=$3
 PATH_TO_SSH_KEY=$4
 
 if [ $# -ne 3 ]; then
-	echo Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY
+	echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
 
 else
 	sudo scp -o StrictHostKeyChecking=no -i "$PATH_TO_SSH_KEY"/
