@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# Script to fix webstack debugging issue redirect to port 8080
-sudo sed '/Listen 80/a\Listen 8080' /etc/apache2/ports.conf
-sudo sed '/Listen 80/a\Listen 8080' /etc/apache2/sites-enabled/000-default.conf
-sudo service apache2  restart
